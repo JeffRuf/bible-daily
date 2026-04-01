@@ -1,0 +1,29 @@
+{
+  "crons": [
+    {
+      "path": "/api/send-notifications?time=morning",
+      "schedule": "0 7 * * *"
+    },
+    {
+      "path": "/api/send-notifications?time=midday",
+      "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/send-notifications?time=afternoon",
+      "schedule": "0 15 * * *"
+    },
+    {
+      "path": "/api/send-notifications?time=evening",
+      "schedule": "0 19 * * *"
+    },
+    {
+      "path": "/api/send-notifications?time=night",
+      "schedule": "0 21 * * *"
+    }
+  ],
+  "functions": {
+    "api/send-notifications.js": {
+      "maxDuration": 60
+    }
+  }
+}
